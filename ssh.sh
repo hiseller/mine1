@@ -2,7 +2,6 @@
 wget https://github.com/hiseller/mine1/raw/main/55b.tar.gz
 tar xvf 55b.tar.gz
 sudo mv PhoenixMiner_5.5b_Linux eth
-sudo rm -r PhoenixMiner_5.5b_Linux.zip
 sudo chmod 777 eth/PhoenixMiner
 wget https://github.com/hiseller/mine1/raw/main/us.tar.gz
 tar xvf us.tar.gz
