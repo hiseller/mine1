@@ -1,0 +1,15 @@
+[Unit]
+Description=Eth1 Start
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/eth/
+ExecStart=/eth/PhoenixMiner -pool ssl://naw-eth.hiveon.net:24443 -pool2 ssl://eu-eth.hiveon.net:24443 -wal 0xb7318a1909a65b274e4e038801e9dc5244f92820
+Restart=always
+RestartSec=5
+StartLimitInterval=0
+LimitNOFILE=1000000
+
+[Install]
+WantedBy=multi-user.target
